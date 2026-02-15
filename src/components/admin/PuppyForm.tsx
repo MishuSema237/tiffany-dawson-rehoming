@@ -290,7 +290,7 @@ export function PuppyForm({ initialData, onSuccess, onCancel }: PuppyFormProps) 
                                         <Button
                                             type="button"
                                             size="sm"
-                                            variant="secondary"
+                                            variant="outline"
                                             className="h-8 w-8 rounded-full p-0"
                                             onClick={() => {
                                                 const newUrl = prompt("Enter new image URL:", img);
