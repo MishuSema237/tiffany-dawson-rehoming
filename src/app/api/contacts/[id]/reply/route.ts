@@ -5,12 +5,13 @@ import { sendMail } from "@/lib/mail";
 
 export async function POST(
     request: Request,
-    { params }: { params: { id: string } }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     await dbConnect();
+    const { id } = await params;
     try {
         const { message } = await request.json();
-        const contact = await Contact.findById(params.id);
+        const contact = await Contact.findById(id);
 
         if (!contact) {
             return NextResponse.json({ error: "Contact not found" }, { status: 404 });
