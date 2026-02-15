@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://tiffany-dawson-rehoming.vercel.app"),
 
   title: {
     default: "Tiffany Dawson's Rehoming | Maltipoo, Cavapoo & Poochon Puppies",
@@ -48,12 +48,12 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical: "https://tiffany-dawson-rehoming.vercel.app",
   },
 
   openGraph: {
     type: "website",
-    url: "https://yourdomain.com",
+    url: "https://tiffany-dawson-rehoming.vercel.app",
     title:
       "Tiffany Dawson's Rehoming | Loving Maltipoo, Cavapoo & Poochon Puppies",
     description:
