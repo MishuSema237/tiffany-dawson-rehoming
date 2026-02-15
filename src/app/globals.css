@@ -1,26 +1,87 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+    /* Teal Deep Palette */
+    --color-brand-teal-deep-900: #1B444A;
+    --color-brand-teal-deep-800: #22545A;
+    --color-brand-teal-deep-700: #28636B;
+    --color-brand-teal-deep-600: #31757E;
+    --color-brand-teal-deep-500: #3F8F99;
+    --color-brand-teal-deep-400: #5AAAB4;
+    --color-brand-teal-deep-300: #7FB6BA;
+    --color-brand-teal-deep-200: #A8D1D4;
+    --color-brand-teal-deep-100: #D9ECEE;
+    --color-brand-teal-deep-50: #EBF7F8;
+
+    /* Teal Muted Palette */
+    --color-brand-teal-muted-900: #365E5F;
+    --color-brand-teal-muted-800: #437778;
+    --color-brand-teal-muted-700: #528C8D;
+    --color-brand-teal-muted-600: #63A1A2;
+    --color-brand-teal-muted-500: #74B4B5;
+    --color-brand-teal-muted-100: #E4F3F3;
+
+    /* Red Palette */
+    --color-brand-red-900: #7E1211;
+    --color-brand-red-800: #9E1615;
+    --color-brand-red-700: #BE1C1A;
+    --color-brand-red-600: #D73331;
+    --color-brand-red-500: #E95A58;
+    --color-brand-red-300: #F4A6A5;
+    --color-brand-red-100: #FCE3E3;
+
+    /* White / Neutral Palette */
+    --color-brand-white-100: #FFFFFF;
+    --color-brand-white-200: #FFFEFE;
+    --color-brand-white-300: #F5F5F5;
+    --color-brand-white-400: #EAEAEA;
+    --color-brand-white-500: #DCDCDC;
+    --color-brand-white-700: #B5B5B5;
+    --color-brand-white-900: #7A7A7A;
+
+    /* Flattened Aliases - Avoiding var() inside @theme if possible for stability */
+    --color-brand-teal-deep: #28636B;
+    --color-brand-teal-muted: #528C8D;
+    --color-brand-red: #BE1C1A;
+    --color-brand-white: #FFFEFE;
+
+    --animate-carousel: scroll 20s linear infinite;
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@layer base {
+    body {
+        background-color: #FFFEFE;
+        /* Same as brand-white-200 */
+        color: #111827;
+        /* gray-900 */
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@layer utilities {
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+    }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #e5e7eb;
+        border-radius: 10px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #d1d5db;
+    }
 }
