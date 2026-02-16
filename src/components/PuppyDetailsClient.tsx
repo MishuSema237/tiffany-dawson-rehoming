@@ -95,12 +95,6 @@ export function PuppyDetailsClient({ puppy, relatedPuppies }: PuppyDetailsClient
                                 </>
                             )}
 
-                            {puppy.status === "available" && (
-                                <div className="absolute top-6 left-6 bg-brand-white-100/95 backdrop-blur-md text-brand-teal-deep-700 px-4 py-2 rounded-full text-xs font-black flex items-center gap-2 shadow-xl ring-1 ring-brand-white-400 z-10 uppercase tracking-tight">
-                                    <BadgeCheck className="w-4 h-4 text-brand-red-700" />
-                                    Available
-                                </div>
-                            )}
                         </div>
 
                         {/* Thumbnails */}
