@@ -118,9 +118,8 @@ export function AdoptionForm({ puppyName, onSuccess }: { puppyName?: string, onS
             </div>
 
             {/* Application Questions */}
-            <div className="space-y-10 mt-12 bg-brand-white-300 p-8 md:p-10 rounded-[2.5rem] border border-brand-white-400 shadow-inner">
+            <div className="space-y-10 mt-12 md:bg-brand-white-300 p-0 md:p-10 rounded-[2.5rem] md:border md:border-brand-white-400 md:shadow-inner">
                 <h4 className="text-xl font-extrabold text-brand-teal-deep-700 flex items-center gap-3 mb-6">
-                    <span className="w-10 h-10 rounded-full bg-brand-teal-deep-700 text-white flex items-center justify-center text-sm shadow-lg">8</span>
                     Adoption Questions
                 </h4>
                 <div className="space-y-10">

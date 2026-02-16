@@ -212,11 +212,11 @@ export default async function Home() {
               <div key={idx} className="min-w-[85%] lg:min-w-0 snap-center">
                 <div className="bg-brand-white-300 p-6 sm:p-8 rounded-2xl shadow-sm border border-brand-white-400 h-full flex flex-col sm:flex-row gap-6">
                   {t.image ? (
-                    <div className="relative w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0 rounded-2xl overflow-hidden border-2 border-white shadow-lg">
+                    <div className="relative w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0 rounded-2xl overflow-hidden border-2 border-white shadow-lg hidden lg:block">
                       <Image src={t.image} alt={t.name} fill className="object-cover" />
                     </div>
                   ) : (
-                    <div className="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0 rounded-2xl bg-brand-red-100 flex items-center justify-center border-2 border-white shadow-lg">
+                    <div className="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0 rounded-2xl bg-brand-red-100 flex items-center justify-center border-2 border-white shadow-lg hidden lg:block">
                       <Heart className="w-10 h-10 text-brand-red-700 fill-brand-red-700/20" />
                     </div>
                   )}

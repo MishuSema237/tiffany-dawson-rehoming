@@ -28,13 +28,6 @@ export function PuppyCard({ puppy }: { puppy: PuppyProps }) {
                 <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] text-brand-teal-deep-700 shadow-xl border border-white/20">
                     {puppy.breed}
                 </div>
-                {/* Status Tag */}
-                {puppy.status === "available" && (
-                    <div className="absolute top-6 left-6 bg-brand-red-700 text-white px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] flex items-center gap-1.5 shadow-2xl border border-brand-red-600">
-                        <BadgeCheck className="w-3.5 h-3.5" />
-                        Available
-                    </div>
-                )}
                 {/* Overlay on Hover */}
                 <div className="absolute inset-0 bg-brand-teal-deep-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
