@@ -65,10 +65,10 @@ export default function ContactPage() {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h1 className="text-5xl font-black tracking-tighter sm:text-7xl mb-6 uppercase">
+                        <h1 className="text-3xl font-black tracking-tighter sm:text-7xl mb-6 uppercase">
                             Contact <span className="text-brand-red-500">Tiffany</span>
                         </h1>
-                        <p className="mt-4 text-xl text-brand-white-900 max-w-2xl mx-auto leading-relaxed font-medium">
+                        <p className="mt-4 text-base text-brand-white-900 max-w-2xl mx-auto leading-relaxed font-medium sm:text-xl">
                             We're here to help you find your perfect match. Reach out with any questions about our puppies or rehoming process.
                         </p>
                     </motion.div>
@@ -87,7 +87,7 @@ export default function ContactPage() {
                                 className="bg-brand-white-100 p-10 rounded-[3rem] border border-brand-white-400 shadow-2xl relative group overflow-hidden transition-all hover:shadow-brand-teal-deep/10"
                             >
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-brand-red-100 rounded-full -mr-16 -mt-16 group-hover:scale-110 transition-transform duration-700" />
-                                <h2 className="text-3xl font-black text-brand-teal-deep-800 mb-10 flex items-center gap-4 uppercase tracking-tighter">
+                                <h2 className="text-2xl font-black text-brand-teal-deep-800 mb-10 flex items-center gap-4 uppercase tracking-tighter sm:text-3xl">
                                     <span className="w-2 h-8 bg-brand-red-700 rounded-full" />
                                     Get In Touch
                                 </h2>
@@ -140,14 +140,14 @@ export default function ContactPage() {
                                         <div className="bg-brand-teal-deep-700 w-28 h-28 rounded-full flex items-center justify-center mb-10 shadow-2xl animate-bounce">
                                             <Send className="w-12 h-12 text-white" />
                                         </div>
-                                        <h2 className="text-5xl font-black text-brand-teal-deep-800 mb-6 tracking-tighter uppercase">Message Sent!</h2>
-                                        <p className="text-xl text-brand-white-900 max-w-md leading-relaxed font-medium italic">
+                                        <h2 className="text-3xl font-black text-brand-teal-deep-800 mb-6 tracking-tighter uppercase sm:text-5xl">Message Sent!</h2>
+                                        <p className="text-lg text-brand-white-900 max-w-md leading-relaxed font-medium italic sm:text-xl">
                                             Thank you for reaching out. Tiffany will review your inquiry and get back to you personally within 24 hours.
                                         </p>
                                         <Button
                                             onClick={() => setSubmitted(false)}
                                             variant="outline"
-                                            className="mt-12 h-16 px-12 text-lg font-black"
+                                            className="mt-12 h-12 px-8 text-base font-black sm:h-16 sm:px-12 sm:text-lg"
                                         >
                                             Send Another Message
                                         </Button>
@@ -160,7 +160,7 @@ export default function ContactPage() {
                                         exit={{ opacity: 0, y: -20 }}
                                         className="bg-brand-white-100 p-10 md:p-14 rounded-[3.5rem] border border-brand-white-400 shadow-2xl"
                                     >
-                                        <h2 className="text-4xl font-black text-brand-teal-deep-800 mb-10 uppercase tracking-tighter flex items-center gap-4">
+                                        <h2 className="text-2xl font-black text-brand-teal-deep-800 mb-10 uppercase tracking-tighter flex items-center gap-4 sm:text-4xl">
                                             <MessageSquare className="w-10 h-10 text-brand-red-700" />
                                             Send a Message
                                         </h2>
@@ -186,7 +186,7 @@ export default function ContactPage() {
                                                 <Textarea id="message" placeholder="Ask us about a specific puppy or the rehoming process..." value={formData.message} onChange={handleChange} className="rounded-[2rem] border-brand-white-400 focus:ring-brand-teal-deep-300 min-h-[220px] p-8 shadow-inner bg-brand-white-200/50 text-brand-teal-deep-900 font-medium text-lg leading-relaxed" required />
                                             </div>
 
-                                            <Button type="submit" disabled={loading} className="w-full h-20 text-2xl font-black uppercase tracking-widest shadow-2xl">
+                                            <Button type="submit" disabled={loading} className="w-full h-14 text-lg font-black uppercase tracking-widest shadow-2xl sm:h-20 sm:text-2xl">
                                                 {loading ? (
                                                     <span className="flex items-center gap-3">
                                                         <motion.span animate={{ rotate: 360 }} transition={{ repeat: Infinity, duration: 1, ease: "linear" }}>
@@ -214,7 +214,7 @@ export default function ContactPage() {
                         transition={{ duration: 1 }}
                     >
                         <Heart className="w-16 h-16 text-brand-red-700 mx-auto mb-8 opacity-20" />
-                        <p className="text-3xl font-serif italic text-brand-teal-deep-800 leading-relaxed font-bold">
+                        <p className="text-xl font-serif italic text-brand-teal-deep-800 leading-relaxed font-bold sm:text-3xl">
                             "Finding the perfect home for every puppy is not just my job, it's my promise to every family I work with."
                         </p>
                         <p className="mt-6 font-black text-brand-red-700 uppercase tracking-widest text-sm">— Tiffany Dawson</p>

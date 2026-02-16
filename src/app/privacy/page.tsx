@@ -11,7 +11,7 @@ export default function PrivacyPage() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                 >
-                    <h1 className="text-4xl md:text-5xl font-extrabold text-brand-teal-deep-700 mb-8 flex items-center gap-4 uppercase tracking-tighter">
+                    <h1 className="text-2xl md:text-5xl font-extrabold text-brand-teal-deep-700 mb-8 flex items-center gap-4 uppercase tracking-tighter">
                         <span className="w-1.5 h-10 bg-brand-red-700 rounded-full" />
                         Privacy Policy
                     </h1>
@@ -52,7 +52,7 @@ export default function PrivacyPage() {
                                         <div className="p-2 bg-brand-teal-deep-100 rounded-xl text-brand-teal-deep-700 group-hover:bg-brand-red-100 group-hover:text-brand-red-700 transition-colors">
                                             <section.icon className="w-5 h-5" />
                                         </div>
-                                        <h2 className="text-2xl font-extrabold text-brand-teal-deep-700">{section.title}</h2>
+                                        <h2 className="text-xl font-extrabold text-brand-teal-deep-700 sm:text-2xl">{section.title}</h2>
                                     </div>
                                     <p className="text-brand-white-900 leading-relaxed font-medium pl-14">
                                         {section.content}

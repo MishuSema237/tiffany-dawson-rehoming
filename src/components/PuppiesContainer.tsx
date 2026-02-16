@@ -88,7 +88,7 @@ export function PuppiesContainer({ initialPuppies }: PuppiesContainerProps) {
                         <motion.h1
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
-                            className="text-4xl md:text-5xl font-extrabold tracking-tight text-brand-teal-deep-700 mb-4"
+                            className="text-2xl md:text-5xl font-extrabold tracking-tight text-brand-teal-deep-700 mb-4"
                         >
                             Available Puppies
                         </motion.h1>
@@ -96,7 +96,7 @@ export function PuppiesContainer({ initialPuppies }: PuppiesContainerProps) {
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.1 }}
-                            className="text-brand-white-900 text-lg font-medium"
+                            className="text-brand-white-900 text-base md:text-lg font-medium"
                         >
                             Find your new best friend from our litter of happy, healthy pups.
                         </motion.p>
@@ -104,7 +104,7 @@ export function PuppiesContainer({ initialPuppies }: PuppiesContainerProps) {
                     <Button
                         variant="outline"
                         onClick={() => setIsFiltersOpen(!isFiltersOpen)}
-                        className={`flex items-center gap-3 rounded-full border-2 h-12 px-6 font-bold transition-all shadow-sm ${isFiltersOpen
+                        className={`flex items-center gap-3 rounded-full border-2 h-10 px-4 text-xs md:h-12 md:px-6 md:text-sm font-bold transition-all shadow-sm ${isFiltersOpen
                             ? "bg-brand-teal-deep-700 text-white border-brand-teal-deep-700 hover:bg-brand-teal-deep-800"
                             : "bg-white text-brand-teal-deep-700 border-brand-white-400 hover:border-brand-teal-deep-300"
                             }`}

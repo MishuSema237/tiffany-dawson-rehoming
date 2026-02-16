@@ -126,13 +126,13 @@ export function PuppyDetailsClient({ puppy, relatedPuppies }: PuppyDetailsClient
                             <span className="w-6 h-px bg-brand-red-700/30" />
                             {puppy.breed}
                         </div>
-                        <h1 className="text-4xl font-black tracking-tight text-brand-teal-deep-800 sm:text-6xl mb-4 sm:mb-6 uppercase leading-none">
+                        <h1 className="text-3xl font-black tracking-tight text-brand-teal-deep-800 sm:text-6xl mb-4 sm:mb-6 uppercase leading-none">
                             {puppy.name}
                         </h1>
                         <div className="flex flex-wrap gap-2 sm:gap-4 mb-6">
-                            <span className="bg-brand-teal-deep-100 text-brand-teal-deep-700 px-4 py-1.5 rounded-full font-bold text-xs border border-brand-teal-deep-200">{puppy.age}</span>
-                            <span className="bg-brand-teal-muted-100 text-brand-teal-muted-700 px-4 py-1.5 rounded-full font-bold text-xs border border-brand-teal-muted-200">{puppy.gender}</span>
-                            {puppy.status === "available" && <span className="bg-brand-red-100 text-brand-red-700 px-4 py-1.5 rounded-full font-bold text-xs border border-brand-red-200">Fee: {puppy.fee}</span>}
+                            <span className="bg-brand-teal-deep-100 text-brand-teal-deep-700 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full font-bold text-[10px] sm:text-xs border border-brand-teal-deep-200">{puppy.age}</span>
+                            <span className="bg-brand-teal-muted-100 text-brand-teal-muted-700 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full font-bold text-[10px] sm:text-xs border border-brand-teal-muted-200">{puppy.gender}</span>
+                            {puppy.status === "available" && <span className="bg-brand-red-100 text-brand-red-700 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full font-bold text-[10px] sm:text-xs border border-brand-red-200">Fee: {puppy.fee}</span>}
                         </div>
                         {puppy.status === "available" && (
                             <div className="mb-8 text-[10px] font-black text-brand-white-900 uppercase tracking-widest flex items-center gap-2 bg-brand-white-300 p-3 rounded-2xl border border-brand-white-400">
@@ -142,13 +142,13 @@ export function PuppyDetailsClient({ puppy, relatedPuppies }: PuppyDetailsClient
                         )}
 
                         <div className="prose prose-brand mb-8 sm:mb-10">
-                            <h3 className="text-xl sm:text-2xl font-bold text-brand-teal-deep-700 mb-3 sm:mb-4 flex items-center gap-3">
+                            <h3 className="text-lg sm:text-2xl font-bold text-brand-teal-deep-700 mb-3 sm:mb-4 flex items-center gap-3">
                                 <span className="w-1.5 h-6 sm:w-2 sm:h-8 bg-brand-teal-deep-700 rounded-full" />
                                 About {puppy.name}
                             </h3>
                             <p className="text-brand-teal-deep-900 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8 font-medium italic break-words whitespace-pre-line">{puppy.description}</p>
 
-                            <h3 className="text-xl sm:text-2xl font-bold text-brand-red-700 mb-3 sm:mb-4 flex items-center gap-3">
+                            <h3 className="text-lg sm:text-2xl font-bold text-brand-red-700 mb-3 sm:mb-4 flex items-center gap-3">
                                 <span className="w-1.5 h-6 sm:w-2 sm:h-8 bg-brand-red-700 rounded-full" />
                                 Why Rehoming?
                             </h3>
@@ -161,9 +161,9 @@ export function PuppyDetailsClient({ puppy, relatedPuppies }: PuppyDetailsClient
                         {/* CTA / Modal Trigger */}
                         {puppy.status === "available" ? (
                             <div className="bg-brand-white-100 p-6 sm:p-10 rounded-[2rem] sm:rounded-[2.5rem] shadow-xl border border-brand-white-300 relative overflow-hidden">
-                                <h4 className="text-xl sm:text-2xl font-black text-brand-teal-deep-700 mb-2 sm:mb-3 uppercase tracking-tight">Meet {puppy.name}</h4>
+                                <h4 className="text-lg sm:text-2xl font-black text-brand-teal-deep-700 mb-2 sm:mb-3 uppercase tracking-tight">Meet {puppy.name}</h4>
                                 <p className="text-brand-teal-deep-900 text-sm sm:text-lg mb-6 sm:mb-8 leading-relaxed font-medium">Start the journey by filling out our premium adoption application.</p>
-                                <Button onClick={() => setIsModalOpen(true)} className="w-full rounded-full h-14 sm:h-16 text-lg sm:text-xl font-black shadow-lg hover:-translate-y-1 transition-all uppercase tracking-widest" size="lg">
+                                <Button onClick={() => setIsModalOpen(true)} className="w-full rounded-full h-12 sm:h-16 text-base sm:text-xl font-black shadow-lg hover:-translate-y-1 transition-all uppercase tracking-widest" size="lg">
                                     Apply to Adopt
                                 </Button>
                             </div>
@@ -180,7 +180,7 @@ export function PuppyDetailsClient({ puppy, relatedPuppies }: PuppyDetailsClient
                     <div className="mt-20 sm:mt-32 border-t border-brand-white-400 pt-16 sm:pt-20">
                         <div className="flex items-end justify-between mb-8 sm:mb-12 px-4 lg:px-0">
                             <div>
-                                <h2 className="text-2xl sm:text-4xl font-black text-brand-teal-deep-700 tracking-tight uppercase">You Might Also Like</h2>
+                                <h2 className="text-xl sm:text-4xl font-black text-brand-teal-deep-700 tracking-tight uppercase">You Might Also Like</h2>
                                 <p className="text-brand-white-900 mt-1 sm:mt-3 text-sm sm:text-lg italic font-medium">Wait for their forever homes</p>
                             </div>
                             <Link href="/puppies" className="text-[10px] sm:text-sm font-black text-brand-red-700 hover:text-brand-red-600 transition-all flex items-center gap-1.5 sm:gap-2 group mb-1 uppercase tracking-widest">

@@ -10,7 +10,7 @@ export default function TermsPage() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                 >
-                    <h1 className="text-4xl md:text-5xl font-extrabold text-brand-teal-deep-700 mb-8 flex items-center gap-4">
+                    <h1 className="text-2xl md:text-5xl font-extrabold text-brand-teal-deep-700 mb-8 flex items-center gap-4">
                         <span className="w-1.5 h-10 bg-brand-red-700 rounded-full" />
                         Terms & Conditions
                     </h1>
@@ -55,7 +55,7 @@ export default function TermsPage() {
                                     <span className="absolute left-0 top-0 text-brand-red-700/20 text-5xl font-extrabold -ml-4 -mt-2 select-none">
                                         {section.id}
                                     </span>
-                                    <h2 className="text-2xl font-extrabold text-brand-teal-deep-700 mb-4">{section.title}</h2>
+                                    <h2 className="text-xl font-extrabold text-brand-teal-deep-700 mb-4 sm:text-2xl">{section.title}</h2>
                                     <p className="text-brand-white-900 leading-relaxed font-medium">
                                         {section.content}
                                     </p>

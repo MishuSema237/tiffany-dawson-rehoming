@@ -23,10 +23,10 @@ export default function AboutPage() {
             <section className="relative py-32 bg-brand-teal-deep-800 text-brand-white-100 overflow-hidden">
                 <div className="absolute inset-0 bg-brand-red-700/5 -z-10" />
                 <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center relative z-10">
-                    <h1 className="text-5xl font-black tracking-tighter text-white sm:text-7xl mb-8 uppercase">
+                    <h1 className="text-3xl font-black tracking-tighter text-white sm:text-7xl mb-8 uppercase">
                         More Than Just <span className="text-brand-red-500">Rehoming</span>
                     </h1>
-                    <p className="text-xl leading-relaxed text-brand-white-900 max-w-3xl mx-auto font-medium">
+                    <p className="text-lg leading-relaxed text-brand-white-900 max-w-3xl mx-auto font-medium md:text-xl">
                         We are a bridge of love, connecting compassionate families with puppies who need a second chance at happiness. This isn't a business; it's a calling rooted in a lifetime of devotion to animals.
                     </p>
                 </div>
@@ -52,7 +52,7 @@ export default function AboutPage() {
                         </div>
                         <div>
                             <div className="w-16 h-1.5 bg-brand-red-700 rounded-full mb-8" />
-                            <h2 className="text-4xl font-black tracking-tight text-brand-teal-deep-800 sm:text-5xl mb-8 uppercase">Hello, I'm Tiffany Dawson</h2>
+                            <h2 className="text-2xl font-black tracking-tight text-brand-teal-deep-800 sm:text-5xl mb-8 uppercase">Hello, I'm Tiffany Dawson</h2>
                             <div className="space-y-8 text-brand-teal-deep-900 text-lg leading-relaxed font-medium">
                                 <p>
                                     I am a mother, a wife, and a lifelong dog lover. But most importantly, I am an <strong className="text-brand-red-700 font-black px-1">intermediary</strong>, not a breeder or a large shelter.
@@ -86,7 +86,7 @@ export default function AboutPage() {
             <section className="py-24 bg-brand-white-100">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl text-center mb-16">
-                        <h2 className="text-4xl font-black tracking-tight text-brand-teal-deep-800 uppercase">Life with Our Pack</h2>
+                        <h2 className="text-2xl font-black tracking-tight text-brand-teal-deep-800 uppercase sm:text-4xl">Life with Our Pack</h2>
                         <div className="w-24 h-1 bg-brand-red-700 mx-auto mt-4 rounded-full" />
                         <p className="mt-6 text-brand-white-900 text-lg font-medium italic">The joy, the chaos, and the love that fuels our mission every single day.</p>
                     </div>
@@ -128,7 +128,7 @@ export default function AboutPage() {
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand-red-700 to-transparent" />
                 <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
                     <div className="mx-auto max-w-3xl text-center mb-20">
-                        <h2 className="text-4xl font-black tracking-tight sm:text-6xl uppercase">The Tiffany Standard</h2>
+                        <h2 className="text-2xl font-black tracking-tight sm:text-6xl uppercase">The Tiffany Standard</h2>
                         <p className="mt-6 text-xl text-brand-white-900 font-medium">
                             We take rehoming seriously. Our process is designed to protect the puppy above all else, ensuring their physical and emotional well-being.
                         </p>
@@ -192,7 +192,7 @@ export default function AboutPage() {
                             <div className="absolute inset-0 bg-gradient-to-t from-brand-teal-deep-900/90 via-brand-teal-deep-900/20 to-transparent" />
                             <div className="absolute inset-0 p-8 sm:p-10 flex flex-col justify-end">
                                 <span className="text-[10px] font-black uppercase tracking-widest text-brand-red-500 mb-2">Gentle & Affectionate</span>
-                                <h3 className="text-3xl sm:text-4xl font-black uppercase tracking-tighter mb-4">Cavapoos</h3>
+                                <h3 className="text-2xl sm:text-4xl font-black uppercase tracking-tighter mb-4">Cavapoos</h3>
                                 <p className="text-sm sm:text-base text-white/90 font-medium italic leading-relaxed">
                                     A mix of Cavalier King Charles Spaniel and Poodle. Known for their gentle, affectionate nature and teddy-bear looks.
                                 </p>
@@ -210,7 +210,7 @@ export default function AboutPage() {
                             <div className="absolute inset-0 bg-gradient-to-t from-brand-teal-deep-900/90 via-brand-teal-deep-900/20 to-transparent" />
                             <div className="absolute inset-0 p-8 sm:p-10 flex flex-col justify-end">
                                 <span className="text-[10px] font-black uppercase tracking-widest text-brand-red-500 mb-2">Smart & Fun-Loving</span>
-                                <h3 className="text-3xl sm:text-4xl font-black uppercase tracking-tighter mb-4">Maltipoos</h3>
+                                <h3 className="text-2xl sm:text-4xl font-black uppercase tracking-tighter mb-4">Maltipoos</h3>
                                 <p className="text-sm sm:text-base text-white/90 font-medium italic leading-relaxed">
                                     A cross between a Maltese and a Poodle. These smart, fun-loving dogs are great for apartment living and allergy sufferers.
                                 </p>
@@ -228,7 +228,7 @@ export default function AboutPage() {
                             <div className="absolute inset-0 bg-gradient-to-t from-brand-teal-deep-900/90 via-brand-teal-deep-900/20 to-transparent" />
                             <div className="absolute inset-0 p-8 sm:p-10 flex flex-col justify-end">
                                 <span className="text-[10px] font-black uppercase tracking-widest text-brand-red-500 mb-2">Spirited & Fluffy</span>
-                                <h3 className="text-3xl sm:text-4xl font-black uppercase tracking-tighter mb-4">Poochons</h3>
+                                <h3 className="text-2xl sm:text-4xl font-black uppercase tracking-tighter mb-4">Poochons</h3>
                                 <p className="text-sm sm:text-base text-white/90 font-medium italic leading-relaxed">
                                     Bichon Frise meets Poodle. Spirited, fluffy, and full of character, they are intelligent, eager to please, and highly social.
                                 </p>
@@ -241,15 +241,15 @@ export default function AboutPage() {
             {/* CTA */}
             <section className="py-32 bg-brand-white-100 border-t border-brand-white-400 relative overflow-hidden">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center relative z-10">
-                    <h2 className="text-4xl font-black tracking-tight text-brand-teal-deep-800 mb-10 font-serif italic uppercase sm:text-6xl">Ready to Find Your New Best Friend?</h2>
+                    <h2 className="text-2xl font-black tracking-tight text-brand-teal-deep-800 mb-10 font-serif italic uppercase sm:text-6xl">Ready to Find Your New Best Friend?</h2>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                        <Link href="/puppies">
-                            <Button variant="default" size="lg" className="w-full sm:w-auto h-16 px-12 text-xl font-black shadow-2xl">
+                        <Link href="/puppies" className="w-full sm:w-auto">
+                            <Button variant="default" size="lg" className="w-full sm:w-auto h-12 px-8 text-base font-black shadow-2xl sm:h-16 sm:px-12 sm:text-xl">
                                 Browse Available Puppies
                             </Button>
                         </Link>
-                        <Link href="/contact">
-                            <Button variant="outline" size="lg" className="w-full sm:w-auto h-16 px-12 text-xl font-black shadow-2xl border-2">
+                        <Link href="/contact" className="w-full sm:w-auto">
+                            <Button variant="outline" size="lg" className="w-full sm:w-auto h-12 px-8 text-base font-black shadow-2xl border-2 sm:h-16 sm:px-12 sm:text-xl">
                                 Contact Tiffany Now
                             </Button>
                         </Link>
