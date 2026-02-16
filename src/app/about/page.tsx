@@ -20,7 +20,7 @@ export default function AboutPage() {
     return (
         <div className="bg-brand-white-200 min-h-screen">
             {/* Hero */}
-            <section className="relative py-32 bg-brand-teal-deep-800 text-brand-white-100 overflow-hidden">
+            <section className="relative md:py-32 py-20 bg-brand-teal-deep-800 text-brand-white-100 overflow-hidden">
                 <div className="absolute inset-0 bg-brand-red-700/5 -z-10" />
                 <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center relative z-10">
                     <h1 className="text-3xl font-black tracking-tighter text-white sm:text-7xl mb-8 uppercase">

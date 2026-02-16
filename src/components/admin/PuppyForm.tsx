@@ -91,13 +91,13 @@ export function PuppyForm({ initialData, onSuccess, onCancel }: PuppyFormProps) 
         <form onSubmit={handleSubmit} className="bg-white rounded-3xl overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2">
                 {/* Left Column: Details */}
-                <div className="p-8 lg:p-10 space-y-6 border-b lg:border-b-0 lg:border-r border-brand-white-400">
+                <div className="p-6 sm:p-8 lg:p-10 space-y-6 border-b lg:border-b-0 lg:border-r border-brand-white-400">
                     <div className="flex items-center gap-2 mb-2">
                         <Star className="w-5 h-5 text-brand-red-700" />
                         <h3 className="text-xl font-black text-brand-teal-deep-900 uppercase tracking-tight">Puppy Information</h3>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                         <div className="space-y-2">
                             <Label htmlFor="name" className="text-[10px] font-black uppercase tracking-widest text-brand-white-900">Name</Label>
                             <Input id="name" value={formData.name} onChange={handleChange} required className="rounded-xl border-brand-white-400 h-11" placeholder="e.g. Charlie" />
@@ -108,7 +108,7 @@ export function PuppyForm({ initialData, onSuccess, onCancel }: PuppyFormProps) 
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                         <div className="space-y-2">
                             <Label htmlFor="age" className="text-[10px] font-black uppercase tracking-widest text-brand-white-900">Age</Label>
                             <Input id="age" value={formData.age} onChange={handleChange} placeholder="e.g. 3 months" required className="rounded-xl border-brand-white-400 h-11" />
@@ -127,7 +127,7 @@ export function PuppyForm({ initialData, onSuccess, onCancel }: PuppyFormProps) 
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
                         <div className="space-y-2 text-center lg:text-left">
                             <Label htmlFor="status" className="text-[10px] font-black uppercase tracking-widest text-brand-white-900">Status</Label>
                             <select
@@ -163,7 +163,7 @@ export function PuppyForm({ initialData, onSuccess, onCancel }: PuppyFormProps) 
                 </div>
 
                 {/* Right Column: Media */}
-                <div className="p-8 lg:p-10 bg-brand-white-200/50 space-y-8">
+                <div className="p-6 sm:p-8 lg:p-10 bg-brand-white-200/50 space-y-8">
                     <div className="flex items-center gap-2 mb-2">
                         <ImageIcon className="w-5 h-5 text-brand-teal-deep-700" />
                         <h3 className="text-xl font-black text-brand-teal-deep-900 uppercase tracking-tight">Media Management</h3>
@@ -361,9 +361,9 @@ export function PuppyForm({ initialData, onSuccess, onCancel }: PuppyFormProps) 
             </div>
 
             {/* Form Footer */}
-            <div className="p-6 lg:p-8 bg-brand-white-300 border-t border-brand-white-400 flex justify-end gap-4 items-center">
-                <Button type="button" variant="outline" onClick={onCancel} className="rounded-full px-8 h-12 text-sm font-bold border-brand-white-900 text-brand-white-900 uppercase tracking-widest">Cancel</Button>
-                <Button type="submit" disabled={loading} className="rounded-full px-10 h-12 text-sm font-black bg-brand-teal-deep-700 text-white hover:bg-brand-teal-deep-800 shadow-xl uppercase tracking-widest">
+            <div className="p-4 sm:p-6 lg:p-8 bg-brand-white-300 border-t border-brand-white-400 flex flex-col sm:flex-row justify-end gap-4 items-center">
+                <Button type="button" variant="outline" onClick={onCancel} className="w-full sm:w-auto rounded-full px-8 h-12 text-sm font-bold border-brand-white-900 text-brand-white-900 uppercase tracking-widest">Cancel</Button>
+                <Button type="submit" disabled={loading} className="w-full sm:w-auto rounded-full px-10 h-12 text-sm font-black bg-brand-teal-deep-700 text-white hover:bg-brand-teal-deep-800 shadow-xl uppercase tracking-widest">
                     {loading ? "Saving..." : initialData ? "Update Puppy" : "Add Puppy"}
                 </Button>
             </div>

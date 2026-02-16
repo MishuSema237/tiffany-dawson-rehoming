@@ -57,7 +57,7 @@ export default function ContactPage() {
     return (
         <div className="bg-brand-white-200 min-h-screen">
             {/* Hero Section */}
-            <section className="bg-brand-teal-deep-800 py-32 text-brand-white-100 text-center relative overflow-hidden">
+            <section className="bg-brand-teal-deep-800 md:py-32 py-24 text-brand-white-100 text-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-brand-red-700/5 -z-10" />
                 <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
                     <motion.div
@@ -84,14 +84,14 @@ export default function ContactPage() {
                             <motion.div
                                 initial={{ opacity: 0, x: -20 }}
                                 animate={{ opacity: 1, x: 0 }}
-                                className="bg-brand-white-100 p-10 rounded-[3rem] border border-brand-white-400 shadow-2xl relative group overflow-hidden transition-all hover:shadow-brand-teal-deep/10"
+                                className="bg-brand-white-100 md:p-10 p-6 rounded-[3rem] border border-brand-white-400 shadow-2xl relative group overflow-hidden transition-all hover:shadow-brand-teal-deep/10"
                             >
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-brand-red-100 rounded-full -mr-16 -mt-16 group-hover:scale-110 transition-transform duration-700" />
                                 <h2 className="text-2xl font-black text-brand-teal-deep-800 mb-10 flex items-center gap-4 uppercase tracking-tighter sm:text-3xl">
                                     <span className="w-2 h-8 bg-brand-red-700 rounded-full" />
                                     Get In Touch
                                 </h2>
-                                <div className="space-y-10">
+                                <div className="space-y-8">
                                     {[
                                         { icon: Mail, label: "Email Us", val: "tiffany@rehoming.com" },
                                         { icon: Phone, label: "Call/Text", val: "(555) 123-4567" },
@@ -99,11 +99,11 @@ export default function ContactPage() {
                                     ].map((item, i) => (
                                         <div key={i} className="flex items-start gap-5 group/item">
                                             <div className="bg-brand-teal-deep-100 p-4 rounded-2xl text-brand-teal-deep-700 shadow-inner group-hover/item:bg-brand-red-100 group-hover/item:text-brand-red-700 transition-colors">
-                                                <item.icon className="h-6 w-6" />
+                                                <item.icon className="h-5 w-5" />
                                             </div>
                                             <div>
                                                 <p className="text-[10px] font-black text-brand-white-900 uppercase tracking-widest mb-1">{item.label}</p>
-                                                <p className="text-lg font-bold text-brand-teal-deep-900">{item.val}</p>
+                                                <p className="text-base font-bold text-brand-teal-deep-900">{item.val}</p>
                                             </div>
                                         </div>
                                     ))}
@@ -158,10 +158,10 @@ export default function ContactPage() {
                                         initial={{ opacity: 0, y: 20 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0, y: -20 }}
-                                        className="bg-brand-white-100 p-10 md:p-14 rounded-[3.5rem] border border-brand-white-400 shadow-2xl"
+                                        className="bg-brand-white-100 p-4 md:p-14 py-10 rounded-[3rem] border border-brand-white-400 shadow-2xl"
                                     >
-                                        <h2 className="text-2xl font-black text-brand-teal-deep-800 mb-10 uppercase tracking-tighter flex items-center gap-4 sm:text-4xl">
-                                            <MessageSquare className="w-10 h-10 text-brand-red-700" />
+                                        <h2 className="text-xl font-black text-brand-teal-deep-800 mb-10 uppercase tracking-tighter flex items-center gap-4 sm:text-4xl">
+                                            <MessageSquare className="w-6 h-6 md:w-10 md:h-10 text-brand-red-700" />
                                             Send a Message
                                         </h2>
                                         <form onSubmit={handleSubmit} className="space-y-10">
@@ -186,7 +186,7 @@ export default function ContactPage() {
                                                 <Textarea id="message" placeholder="Ask us about a specific puppy or the rehoming process..." value={formData.message} onChange={handleChange} className="rounded-[2rem] border-brand-white-400 focus:ring-brand-teal-deep-300 min-h-[220px] p-8 shadow-inner bg-brand-white-200/50 text-brand-teal-deep-900 font-medium text-lg leading-relaxed" required />
                                             </div>
 
-                                            <Button type="submit" disabled={loading} className="w-full h-14 text-lg font-black uppercase tracking-widest shadow-2xl sm:h-20 sm:text-2xl">
+                                            <Button type="submit" disabled={loading} className="w-full h-14 text-base font-black uppercase tracking-widest shadow-2xl sm:h-20 sm:text-2xl">
                                                 {loading ? (
                                                     <span className="flex items-center gap-3">
                                                         <motion.span animate={{ rotate: 360 }} transition={{ repeat: Infinity, duration: 1, ease: "linear" }}>

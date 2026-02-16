@@ -57,16 +57,16 @@ export function ApplicationDetail({ application, onBack, onUpdate }: Application
     };
 
     return (
-        <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-            <div className="flex justify-between items-start mb-6">
+        <div className="bg-white p-4 sm:p-8 rounded-xl shadow-sm border border-gray-100">
+            <div className="flex flex-col sm:flex-row justify-between items-start mb-6 gap-4">
                 <div>
                     <h2 className="text-2xl font-bold text-gray-900">{application.applicantName}</h2>
                     <p className="text-gray-500">{application.email}</p>
                 </div>
-                <Button variant="outline" onClick={onBack}>Back to List</Button>
+                <Button variant="outline" className="w-full sm:w-auto" onClick={onBack}>Back to List</Button>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                 <div className="space-y-4">
                     <h3 className="font-semibold text-lg border-b pb-2">Questions & Answers</h3>
                     {[
